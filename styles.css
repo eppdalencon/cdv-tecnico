@@ -1,0 +1,449 @@
+/* Página*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    line-height: 1.5em;
+}
+
+main {
+    text-align: center;
+    padding-top: 50px;
+    background-image: url('Assets/bg.png');
+    background-position: center bottom;
+    background-size: 100vw 558px;
+    background-repeat: no-repeat;
+    flex-grow: 1;
+    font-family: Poppins, sans-serif;
+}
+
+/* Header*/
+
+.header {
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+    width: 100%;
+    height: 157px;
+    background-color: #5000C8;
+}
+
+.header object {
+    width: 177px; 
+    height: 122px;
+}
+
+/* Footer*/
+
+.footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 127px;
+    position: sticky;
+    top: 100%;
+    background-color: #1C1B35;
+}
+
+.footer object{
+    width: 292px; 
+    height: 37px;
+}
+
+/*Título*/
+
+h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #5000c8;
+    margin-bottom: 35px;
+}
+
+h1 span {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 15px;
+}
+
+/*Lista */
+
+.content-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5px;
+    min-height: 292px;
+}
+
+.content-header {
+    font-weight: 600;
+    font-size: 30px;
+    color: #5000c8;
+    line-height: 1.2em;
+}
+
+.number {
+    font-size: 135px;
+    color: #5000C8;
+    font-weight: 800;
+    margin-right: 40px;
+    margin-top: 105px;
+}
+
+#two{
+    margin-top: 100px;
+}
+
+#three{
+    margin-top: 85px;
+}
+
+.content-middle {
+    text-align: left;
+    margin-top: 60px;
+    width: 668px;
+    font-size: 20px;
+    color: #616161;
+}
+
+.content-middle p {
+    margin-bottom: 12px;
+    
+}
+
+p span {
+    font-weight: 600;
+}
+
+/*Botões da Lista*/
+
+#whats-button {
+    background: transparent linear-gradient(180deg, #25D366 0%, #075E54 100%) 0% 0% no-repeat padding-box;
+    
+}
+
+#research-button {
+    background-color: #5000C8;
+   
+}    
+
+.button {
+    border-radius: 21px;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    width:331px;
+    height: 49px;
+    margin-top: 10px;
+}
+
+/*Imagens*/
+
+#whats {
+    height: 292px;
+    width:204px;
+    margin-bottom: 20px;
+}
+
+#whats_mobile {
+    display: none;
+}
+
+#graph {
+    padding-top: 30px;
+    width:200px;
+    height:200px;
+}
+
+#graph_mobile {
+    display: none;
+}
+
+#clock {
+    height: 234px;
+    width: 204px;
+    padding-top: 57px;
+}
+
+#clock_mobile {
+    display: none;
+}
+
+/*Separadores*/
+
+hr { display: block; 
+    height: 1px;
+    border: 0; 
+    border-top: 1px solid #c4c4c4;
+    padding: 0; 
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+/*Página*/    
+
+main {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow-x: hidden;
+}
+
+/*Header*/
+
+.header{
+    height: 115px;
+} 
+
+.header object {
+    width: 125.65px; 
+    height: 86.55px;
+}
+
+/*Footer*/
+
+.footer {
+    height: 115px;
+}
+
+.footer object{
+    width: 259.42px; 
+    height: 32.93px;
+}
+
+/*Título*/
+
+h1 {   
+    font-size: 25px; 
+    max-width: 328px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 24px;
+}
+
+/*Lista*/
+
+.content-box {
+    flex-direction: column;
+    align-items: center;
+    width: 317px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+}
+
+.content-header {
+    font-size: 23px;
+}
+
+.content-middle {
+    text-align: center;
+    width:317px;
+    display: block;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.mobile_middle {
+    text-align: left;
+}
+
+.number {
+    display: none;
+}
+
+/*Botões da Lista*/
+
+#whats-button {
+    width: 317px;
+    font-size: 18px;
+} 
+
+#research-button {
+    width:317px;
+    font-size: 18px;
+}   
+
+/*Imagens*/
+
+#whats_mobile {
+    display: block;
+    width: 280px; 
+    height: 230px;
+}
+
+#graph_mobile {
+    display: block;
+    width: 280px; 
+    height: 230px;
+}
+
+
+#clock_mobile {
+    display: block;
+    width: 280px; 
+    height: 230px;
+}
+
+#whats {
+    display: none;
+}
+
+#graph {
+    display: none;
+}
+
+#clock {
+    display: none;
+}
+
+/*Separadores*/
+
+hr {
+    display: none;
+}
+
+
+br {
+    display:none;
+}  
+
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+ 
+/*Página*/    
+
+main {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*Header*/
+
+.header{
+    height: 115px;
+} 
+
+.header object {
+    width: 125.65px; 
+    height: 86.55px;
+}
+
+.footer {
+    height: 115px;
+}
+
+.footer object{
+    width: 259.42px; 
+    height: 32.93px;
+}
+
+/*Título*/
+
+h1 {   
+    font-size: 28px; 
+    max-width: 80%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 26px;
+}
+
+/*Lista*/
+
+.content-box {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; 
+}
+
+.content-header {
+    font-size: 26px;
+}
+
+.content-middle {
+    text-align: center;
+    width:100%;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.number {
+    display: none;
+}
+
+/*Botões da Lista*/
+
+#whats-button {
+    width: 317px;
+    font-size: 18px;
+} 
+
+#research-button {
+    width:317px;
+    font-size: 18px;
+}    
+
+/*Imagens*/
+
+#whats_mobile {
+    display: block;
+    width: 280px; 
+    height: 230px;
+}
+
+#graph_mobile {
+    display: block;
+    width: 280px; 
+    height: 230px;
+}
+
+#clock_mobile {
+    display: block;
+    width: 280px; 
+    height: 230px;
+}
+
+#whats {
+    display: none;
+}
+
+#graph {
+    display: none;
+}
+
+#clock {
+    display: none;
+}
+
+/*Separadores*/
+
+hr {
+    display: none;
+}
+
+br {
+    display:none;
+}      
+
+}
